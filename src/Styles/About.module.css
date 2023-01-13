@@ -1,0 +1,93 @@
+.mainWrapper{
+  background-color: darkgray;
+}
+
+
+.aboutUp{
+  
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2em;
+    padding-top: 6em;
+    text-align: justify;
+    
+  }
+ 
+  .aboutDown{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2em;
+    flex-direction: row-reverse;
+    text-align: justify;
+   
+  }
+  
+  .vfirst{
+   box-shadow: 0 3px 24px 20px rgb(103, 103, 236);
+    height: 380px; 
+    margin-bottom: 40px;
+    
+  }
+  .vtwo{
+    
+    composes : vfirst
+  }
+  
+  .content{
+    width: 50%;
+    font-size: 1.2em;
+    
+  
+  }
+  
+  .learn{
+    right: 3em;
+    background-color: rgb(148, 5, 5);
+    color: white;
+    padding: 0.5em;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+   
+  }
+  .heading{
+    margin-bottom: 10px;
+    color:rgb(6, 5, 67)
+  }
+  @media (max-width:700px) {
+    .mainWrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .aboutUp{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+    }
+    .aboutDown{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+    .vfirst{
+      /* width:400px; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .vtwo{
+      margin-top: 30px;
+    }
+    .v1{
+      
+     width:100%;
+     
+    }
+    
+  }

@@ -1,0 +1,28 @@
+.container-act{
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    
+}
+.ul-act{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: column;
+  box-shadow: 0 3px 20px 20px gray;
+    background-color: rgb(6, 6, 92);
+    margin: 10px;
+    padding: 50px;
+    width: 90vh;
+    color: beige;
+
+}
+.ul-h{
+    margin-bottom: 30px;
+}

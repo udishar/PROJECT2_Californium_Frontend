@@ -1,56 +1,55 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter,RouterProvider} from 'react-router-dom';
-import HomePage from './Components/HomePage';
-import AboutUs from './Components/AboutUs';
-import Register from './Components/Register';
-import Login from './Components/Login';
-import ShowTeam from './Components/ShowTeam';
-import { RecoilRoot } from 'recoil';
-import Activity from './Components/Activity';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./Components/HomePage";
+import AboutUs from "./Components/AboutUs";
+import Register from "./Components/Register";
+import Login from "./Components/Login";
+import ShowTeam from "./Components/ShowTeam";
+import { RecoilRoot } from "recoil";
+import Activity from "./Components/Activity";
+import Pricing from "./Components/Pricing";
 
-import Pricing from './Components/Pricing';
+const root = ReactDOM.createRoot(document.getElementById("root"));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/AboutUs",
+    element: <AboutUs />,
+  },
+  {
+    path: "/Register",
+    element: <Register />,
+  },
+  {
+    path: "/Login",
+    element: <Login />,
+  },
+  {
+    path: "/showTeam",
+    element: <ShowTeam />,
+  },
+  {
+    path: "/activity",
+    element: <Activity />,
+  },
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-const router=createBrowserRouter([
   {
-    path:'/',
-    element:<HomePage/>
-  }
-  ,{
-    path:'/AboutUs',
-    element:<AboutUs/>
+    path: "/pricing",
+    element: <Pricing />,
   },
-  {
-    path:'/Register',
-    element:<Register/>
-  },
-  {
-    path:'/Login',
-    element:<Login/>
-  },
-  {
-    path:'/showTeam',
-    element:<ShowTeam/>
-  },
-  {
-    path:'/activity',
-    element:<Activity/>
-  },
- 
-  {
-    path:'/pricing',
-    element:<Pricing/>
-  }
-])
+]);
 
 root.render(
   <React.StrictMode>
     <RecoilRoot>
-   <RouterProvider router={router}/>
-   </RecoilRoot>
+      <RouterProvider router={router} />
+    </RecoilRoot>
   </React.StrictMode>
 );
 

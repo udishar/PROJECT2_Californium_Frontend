@@ -1,38 +1,35 @@
-body{
-    height:100%;
-    width: 100%;
-     margin: 0;
-     padding: 0;
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  height: 100vh;
+  max-width: 100%;
+  background-image: url("6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px darkgray solid;
+}
 
+.Container {
+  margin-top: 250px;
+  margin-left: 60px;
 }
-.main{
-    height: 100vh;
-    max-width: 100%;
-    background-image: url("6.jpg");
-    background-repeat: no-repeat;
-   background-size: cover;
-   border: 1px darkgray solid;
+.text {
+  font-family: fantasy;
+  font-size: 1.5rem;
+  color: rgb(2, 40, 52);
 }
-
-
-.Container{
-    margin-top: 250px;
-    margin-left: 60px;
-    
-}
-.text{
-    font-family: fantasy;
-    font-size: 1.5rem;
-    color:rgb(2, 40, 52)
-}
-.btn2{
-    margin-top: 50px;
-    font-size: 20px;
-    font-weight:bolder ;
-    padding: 10px;
-    border-radius: 120px;
-    background-color: rgb(111, 1, 1);
-    border: none;
-    color: rgb(201, 233, 244);
-    box-shadow:0 3px 20px 15px rgb(239, 110, 110);
+.btn2 {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 120px;
+  background-color: rgb(111, 1, 1);
+  border: none;
+  color: rgb(201, 233, 244);
+  box-shadow: 0 3px 20px 15px rgb(239, 110, 110);
 }
